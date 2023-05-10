@@ -18,40 +18,38 @@ body {
   left: 0; 
   margin: 0; 
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
   z-index: 4;
+  background-color: inherit;
+  color: inherit;
 }
 
 .large-modal {
   position: absolute; 
-  top: 25vh;
-  left: 25vw; 
+  top: calc(15vh - 1px);
+  left: calc(15vw - 1px); 
   margin: 0; 
-  width: 50vw;
-  height: 50vw;
+  width: 70vw;
+  height: 70vh;
   z-index: 3;
-  background-color: red;
+  background-color: inherit;
+  color: inherit;
+  border: 2px solid black;
 }
-
-.medium-modal {
-  position: absolute; 
-  top: 37vh;
-  left: 37vw; 
-  margin: 0; 
-  width: 26vw;
-  height: 26vw;
-  z-index: 2;
-  background-color: green;
-}
-
 
 .small-modal {
   position: absolute; 
-  top: calc(50vh - 50px);
-  left: calc(50vw - 50px); 
+  top: calc(50vh - 101px);
+  left: calc(50vw - 201px); 
   margin: 0; 
-  width: 100px;
-  height: 100px;
+  width: 400px;
+  height: 200px;
   z-index: 1;
-  background-color: blue;
+  background-color: inherit;
+  color: inherit;
+  border: 2px solid black;
+}
+
+.hidden {
+  display: none;
 }
