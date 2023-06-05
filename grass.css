@@ -1,15 +1,31 @@
 body {
   background-color: white;
+  border-color: black;
   color: black;
 }
 
 .dark-mode {
   background-color: black;
+  border-color: white;  
   color: white;
 }
 
 .sans { 
   font-family: "Segoe UI", "Open Sans", Arial;
+}
+
+@font-face {
+  font-family: 'Baskerville';
+  src: url('Baskerville-Normal.woff2') format('woff2'),
+    url('Baskerville-Normal.woff') format('woff'),
+    url('Baskerville-Normal.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.serif {
+  font-family: Baskerville;
 }
 
 .whole-page-modal {
@@ -52,4 +68,26 @@ body {
 
 .hidden {
   display: none;
+}
+
+#done {
+  width: 300px;
+  height: 200px;
+  font-size: 50px;
+  border-width: 10px;
+  border-color: inherit;  
+  background-color: inherit;
+  color: inherit;
+  margin: 0 calc(50vw - 150px);
+}
+
+#outside {
+  width: 180px;
+  height: 90px;
+  font-size: 30px;
+  border-width: 5px;
+  border-color: inherit;  
+  background-color: inherit;
+  color: inherit;
+  margin: 0 calc(50vw - 90px);
 }

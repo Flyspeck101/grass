@@ -9,14 +9,15 @@
     <meta name="theme-color" content="#00FF00">
     <link rel="icon" type="image/x-icon" href="./img/grass.png">
     <link rel="stylesheet" href="./grass.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./grass/grass.js"></script>
   </head>
-  <body>
+  <body onload="grass(window.document);">
     <div class="whole-page-modal hidden"></div>
     <div class="large-modal hidden"></div>
     <div class="small-modal hidden"></div>
-    grass
-    <script src="./grass/grass.js">
-      grass(window.document);
-    </script>
+    <audio loop>
+      <source src="./sound/grass.wav" type="audio/wav">
+    </audio>
   </body>
 </html>
